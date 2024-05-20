@@ -1,0 +1,170 @@
+@import url("fonts.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-Yellow text-DarkPurple border border-Yellow py-2 px-8 rounded-xl font-semibold text-lg;
+  }
+  .TxtBtn {
+    @apply bg-transparent text-Yellow border-none 
+  py-2 px-8 font-semibold text-lg;
+  }
+}
+
+:root {
+  /* Font sizes */
+  --urbanist-font-size-heading: 3.5rem;
+  --urbanist-font-size-paragraph: 1rem;
+
+  /* Font color */
+  --urbanist-font-color: #fafafa;
+  --urbanist-secondary-color: #e3c648;
+
+  /* Font style */
+  --urbanist-font-style-normal: normal;
+  --urbanist-font-style-italic: italic;
+
+  /* Text transform */
+  --urbanist-text-transform-uppercase: uppercase;
+}
+
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0217;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  font-size: var(--urbanist-font-size-paragraph);
+  font-weight: 400;
+  color: var(--urbanist-font-color);
+  letter-spacing: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+h1 {
+  line-height: 4.2rem;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+p,
+li {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+li a {
+  font-weight: 600;
+}
+
+a {
+  font-weight: 500;
+  color: var(--urbanist-font-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--urbanist-secondary-color);
+}
+
+.nav a:focus {
+  color: var(--urbanist-secondary-color);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+/*services card glass-morphoric effect */
+.glass-container {
+  border-radius: 10px;
+  box-shadow: -1px 0 1px 0.5px rgba(227, 198, 72, 0.5),
+    1px -1px 1px rgba(42, 33, 39, 1); /*Adjust shadow intensity here*/
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-card {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+.delay-4 {
+  animation-delay: 2s;
+}
+
+@media screen and (min-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+  }
+  h1 {
+    line-height: 4.2rem;
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+  p,
+  li {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+}

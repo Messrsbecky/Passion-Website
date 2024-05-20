@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url("../assets/font/Urbanist-VariableFont_wght.ttf") format("truetype");
+  /* Add other font formats here if needed */
+  font-weight: 100 900; /* Specify font weight range */
+  font-stretch: 50% 200%; /* Specify font width range */
+  font-style: normal; /* Specify font style variations */
+  font-optical-sizing: auto; /* Adjust font design for different sizes */
+  /* Add other font variations if needed */
+}
+
+@font-face {
+  font-family: "Urbanist-italic";
+  src: url("../assets/font/Urbanist-Italic-VariableFont_wght.ttf") format("truetype");
+  /* Add other font formats here if needed */
+  font-weight: 100 900; /* Specify font weight range */
+  font-stretch: 50% 200%; /* Specify font width range */
+  font-style: italic; /* Specify font style variations */
+  font-optical-sizing: auto; /* Adjust font design for different sizes */
+  /* Add other font variations if needed */
+}
