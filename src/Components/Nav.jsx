@@ -60,7 +60,7 @@ function Nav() {
           </ul>
         </div>
         <div
-          className="flex p-2 rounded-lg hover:border hover:border-Yellow active:bg-Yellow active:border active:border-Yellow md:hidden"
+          className="flex p-2 border border-transparent rounded-lg hover:border hover:border-Yellow active:bg-Yellow active:border active:border-Yellow md:hidden"
           onClick={toggleMenu}
         >
           <img src={menu} alt="menu" width={24} height={24} />
