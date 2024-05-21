@@ -1,3 +1,4 @@
+import footerPattern from "../assets/Images/largeFooterPattern.png"
 import ig from "../assets/Icons/instagram.svg";
 import x from "../assets/Icons/X.svg";
 import tg from "../assets/Icons/telegram.svg";
@@ -5,7 +6,7 @@ import tel from "../assets/Icons/phone.svg";
 import mail from "../assets/Icons/email.svg";
 function Footer() {
   return (
-    <footer className="bg-Yellow dark:bg-Yellow bg-largeFooterTexture bg-cover bg-center flex flex-col items-center gap-10 py-16 ">
+    <footer className="bg-Yellow dark:bg-Yellow bg-center bg-cover flex flex-col items-center gap-10 py-16 " style={{ backgroundImage: `url(${footerPattern})` }}>
       <div className="">
         <h2 className="text-DarkPurple">Contact Me</h2>
       </div>

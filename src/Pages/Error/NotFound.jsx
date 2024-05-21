@@ -17,7 +17,6 @@ export default function NotFound() {
           Oops! Looks like you've taken a wrong turn.
           <br />
           Don't worry, even the best explorers get lost sometimes. you'll be
-          taken back in a few seconds !
         </p>
       </div>
     </div>
