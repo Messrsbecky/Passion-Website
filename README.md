@@ -11,7 +11,12 @@
 - #### Services
   - Focuses on the services he offers 
 - #### Resume
-  - incoming :EMOJICODE😜
+  - incoming 😜
+
+
+###Check design out here###
+![Figma design screnshot](incoming)
+
 
 ### Aside from the content of the websites, its development had a couple of other things in view
 
@@ -21,9 +26,14 @@
 - ###### Navigation
 - ###### Quality videos and images
 - ###### Design specification alignment
+
+###Check website out here###
+![Web view screenshot](incoming)
+
+  
   
 **The design credit goes to _Niphemi aboloyinjo_ who did an outstanding job of picking a theme, branding and ui designs which reflects the web3 sector**
-you can check her out here :EMOJICODE⤵️
+you can check her out here ⤵️
 
 - incoming
 - incoming
@@ -31,8 +41,8 @@ you can check her out here :EMOJICODE⤵️
 - incoming
 
 **The development credit goes to _Elizabeth Becky_ who developed the website, ensured uncompromised aesthetics and and functionalities as well as documentation.**
-***And yes! shes also a technical writer :EMOJICODE🫣***
-you can check her out here :EMOJICODE⤵️
+***And yes! shes also a technical writer 🫣***
+you can check her out here ⤵️
 
 - [LinkedIn](www.linkedin.com/in/elizabethmomoh) 
 - [Github](https://github.com/Messrsbecky)
