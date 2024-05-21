@@ -10,9 +10,9 @@ function Services() {
       alt: "shilling service",
       title: "Shilling",
       shortDescription:
-        "As a professional shiller I help promote services within the cryptocurrency communities to raise awareness and interest in a specific token via targeted advertising and engagement.",
+        "As a professional shiller I help promote services within cryptocurrency communities to raise awareness and interest in a specific token via targeted advertising and engagement.",
       fullDescription:
-        "As a professional shiller I help promote services within the cryptocurrency communities to raise awareness and interest in a specific token via targeted advertising and engagement. I have a knack for helping community members see and explore the potential of crypto assets I have made my research on and endorse so they can invest in it.",
+        "As a professional shiller I help promote services within cryptocurrency communities to raise awareness and interest in a specific token via targeted advertising and engagement. I have a knack for helping community members see and explore the potential of crypto assets I have made my research on and endorse so they can invest in it.",
       showFullDescription: false,
       id: 1,
     },
@@ -64,7 +64,7 @@ function Services() {
   };
 
   return (
-    <section className="bg-DarkPurple flex flex-col items-center justify-center gap-10 py-14 md:px-20 lg:px-40">
+    <section className="bg-DarkPurple dark:bg-DarkPurple flex flex-col items-center justify-center gap-10 py-14 md:px-20 lg:px-40">
       <h2>Services</h2>
       <div className="flex flex-wrap gap-6">
         {services.map((service) => (
@@ -91,7 +91,7 @@ function Services() {
                 {service.shortDescription}
               </p>
               <p
-                className={` md:block ${
+                className={` text-left md:block ${
                   service.showFullDescription ? "block" : "hidden"
                 }`}
               >

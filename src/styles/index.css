@@ -6,11 +6,11 @@
 
 @layer components {
   .btn {
-    @apply bg-Yellow text-DarkPurple border border-Yellow py-2 px-8 rounded-xl font-semibold text-lg;
+    @apply bg-Yellow text-DarkPurple border border-Yellow py-2 px-8 rounded-xl font-semibold text-lg dark:bg-Yellow dark:text-DarkPurple;
   }
   .TxtBtn {
     @apply bg-transparent text-Yellow border-none 
-  py-2 px-8 font-semibold text-lg;
+  py-2 px-8 font-semibold text-lg dark:text-Yellow;
   }
 }
 

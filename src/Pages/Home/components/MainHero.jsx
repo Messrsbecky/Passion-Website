@@ -8,14 +8,14 @@ function MainHero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 1000);
+    }, 500);
 
     // Clear the timer on component unmount to avoid memory leaks
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <header className="bg-DarkPurple flex flex-col justify-center items-center gap-14 pt-10 px-5 md:flex-row-reverse md:gap-5 md:py-10 md:px-20 lg:py-20 lg:px-40">
+    <header className="bg-DarkPurple dark:bg-DarkPurple flex flex-col justify-center items-center gap-14 pt-10 px-5 md:flex-row-reverse md:gap-5 md:py-10 md:px-20 lg:py-20 lg:px-40">
       <div className="flex justify-center md:justify-end lg:w-2/5 lg:gap-0">
         {isVisible && (
           <img
@@ -27,9 +27,9 @@ function MainHero() {
         )}
       </div>
       <div className="text-center flex flex-col gap-6 px-4 md:text-left md:w-5/8 md:gap-8 lg:w-3/5 lg:py-0 lg:my-10 lg:gap-10">
-        <h3 className="text-White">Hello</h3>
-        <h1 className="text-Yellow">I&#39;m Duyilemi Ojo-uyi</h1>
-        <h3 className="text-DullGold">Shiller and Community Manager</h3>
+        <h3 className="text-White dark:text-White">Hello</h3>
+        <h1 className="text-Yellow dark:text-Yellow">I&#39;m Duyilemi Ojo-uyi</h1>
+        <h3 className="text-DullGold dark:text-DullGold">Shiller and Community Manager</h3>
         <div className="mt-5">
           <Link to="/services">
             <button className="btn hover:text-White">Hire me</button>

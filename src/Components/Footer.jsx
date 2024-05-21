@@ -5,7 +5,7 @@ import tel from "../assets/Icons/phone.svg";
 import mail from "../assets/Icons/email.svg";
 function Footer() {
   return (
-    <footer className="bg-Yellow bg-largeFooterTexture bg-cover bg-center flex flex-col items-center gap-10 py-16 ">
+    <footer className="bg-Yellow dark:bg-Yellow bg-largeFooterTexture bg-cover bg-center flex flex-col items-center gap-10 py-16 ">
       <div className="">
         <h2 className="text-DarkPurple">Contact Me</h2>
       </div>
@@ -43,7 +43,7 @@ function Footer() {
               </li>
               <li className="">
                 <a href="http://t.me/De_PASSIONN" target="_blank" rel="noopener noreferrer">
-                <img src={tg} alt="telegram link icon" width={20} height={20} className="w-6 h-6 hover:pb-2 active:outline rounded-lg active:outline-[#283b56]  " /></a>
+                <img src={tg} alt="telegram link icon" width={20} height={20} className="w-6 h-6 hover:pb-2 active:outline rounded-lg active:outline-[#283b56]" /></a>
               </li>
             </ul>
           </div>
