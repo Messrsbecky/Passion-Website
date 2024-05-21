@@ -1,11 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import shilling from "../../../assets/Icons/shillingServices.svg";
 import management from "../../../assets/Icons/communityManagementService.svg";
 import tutor from "../../../assets/Icons/tutoringServices.svg";
 
 function ServicesCards() {
-  const [servicesCards, setServicesCards] = useState([
+  const [showAnimation, setShowAnimation] = useState(false);
+  const [showCards, setShowCards] = useState([]);
+  const sectionRef = useRef(null);
+
+  const servicesCards = [
     {
       image: shilling,
       alt: "shilling service",
@@ -38,28 +42,53 @@ function ServicesCards() {
         "At our crypto tutoring service, we're dedicated to guiding you through the intricate world of cryptocurrencies and blockchain technology.",
       id: 4,
     },
-  ]);
+  ];
 
-  const [showCards, setShowCards] = useState([]);
+  const handleMouseEnter = () => {
+    if (!showAnimation) {
+      setShowAnimation(true);
+      setTimeout(() => {
+        setShowCards(servicesCards);
+      }, servicesCards.length * 2000); // Total delay for all cards
+    }
+  };
 
   useEffect(() => {
-    const timers = servicesCards.map(
-      (_, index) =>
-        setTimeout(() => {
-          setShowCards((prev) => [...prev, servicesCards[index]]);
-        }, (index + 1) * 500) // Delay each card by 1 second
+    const section = sectionRef.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            handleMouseEnter();
+          }
+        });
+      },
+      { threshold: 0.1 }
     );
 
-    return () => timers.forEach((timer) => clearTimeout(timer));
-  }, [servicesCards]);
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
 
   return (
-    <section className="bg-DarkPurple flex flex-col items-center justify-center gap-10 py-20 mx-5 sm:mx-10 md:mx-20 lg:mx-40 ">
+    <section
+      ref={sectionRef}
+      className="bg-DarkPurple dark:bg-DarkPurple flex flex-col items-center justify-center gap-10 pt-20 pb-40 mx-5 sm:mx-10 md:mx-20 lg:mx-40"
+      onMouseEnter={handleMouseEnter}
+    >
       <h2>Services</h2>
-      <div className="service-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="service-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 h-[1650px] sm:h-[1550px] md:h-[1100px] lg:h-[800px]">
         {showCards.map((serviceCard, index) => (
           <section
-            className={`flex flex-col flex-1 gap-5 glass-container bg-Yellow bg-opacity-10 backdrop-blur-lg shadow-lg rounded-2xl py-6 px-4 md:gap-5 sm:px-10 animated-card delay-${
+            className={`flex flex-col flex-1 gap-5 glass-container  bg-Yellow bg-opacity-10 backdrop-blur-lg shadow-lg rounded-2xl py-6 px-4 md:gap-5 sm:px-10 animated-card delay-${
               index + 1
             }`}
             key={serviceCard.id}

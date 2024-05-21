@@ -6,11 +6,11 @@ function MyCareer() {
     >
       <h2>My career so far</h2>
       <p>
-        As a professional shiller i help promote services within the crypto
-        currency communities to raise awareness and interest in a specific token
-        via targeted advertising and engagement . I have a knack for helping
-        community members see and explore the potential of a crypto assets i
-        have made my research on and endorse so they can invest in it.
+        As a professional shiller I help promote services within crypto currency
+        communities to raise awareness and interest in a specific token via
+        targeted advertising and engagement. I have a knack for helping
+        community members see and explore the potential of crypto assets i have
+        made my research on and endorse so they can invest in it.
         <br />
         Our community management service offers comprehensive support for
         cryptocurrency projects. From fostering engagement and moderating
@@ -21,14 +21,12 @@ function MyCareer() {
         community around your project, fostering trust and driving long-term
         success.
         <br />
-        Our community management service offers comprehensive support for
-        cryptocurrency projects. From fostering engagement and moderating
-        discussions to creating and curating valuable content, our experienced
-        team ensures your community thrives. We gather feedback, facilitate
-        growth, and provide education and support to both existing and potential
-        community members. With our service, you can build a strong, active
-        community around your project, fostering trust and driving long-term
-        success.
+        My community of influence consists of various private groups within the
+        crypto space, all eager to support any project I endorse. We provide a
+        strong community base committed to contributing their support, along
+        with a dedicated team of developers ready to assist in building projects
+        from the initial phase through to deployment, marketing, and utility
+        building.
       </p>
     </section>
   );
