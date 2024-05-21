@@ -29,7 +29,7 @@
 
 ### Check website out here
 ![website Image](https://github.com/Messrsbecky/Passion-Website/assets/97636921/bfbac133-e748-408b-959d-eb19bca14490)
-![Video](https://github.com/Messrsbecky/Passion-Website/assets/97636921/e2ebda87-3d42-4773-8d15-edcaee7b4f60)
+https://github.com/Messrsbecky/Passion-Website/assets/97636921/e2ebda87-3d42-4773-8d15-edcaee7b4f60
 
   
 **The design credit goes to _Oluwanifemi Aboloyinjo_ who did an outstanding job of picking a theme, branding and ui designs which reflects the web3 sector**
