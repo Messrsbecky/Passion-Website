@@ -8,7 +8,7 @@ function MainHero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 700);
+    }, 500);
 
     // Clear the timer on component unmount to avoid memory leaks
     return () => clearTimeout(timer);

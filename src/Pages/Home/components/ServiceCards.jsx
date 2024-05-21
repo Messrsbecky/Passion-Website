@@ -49,7 +49,7 @@ function ServicesCards() {
       setShowAnimation(true);
       setTimeout(() => {
         setShowCards(servicesCards);
-      }, servicesCards.length * 2000); // Total delay for all cards
+      }, servicesCards.length * 500); // Total delay for all cards
     }
   };
 
