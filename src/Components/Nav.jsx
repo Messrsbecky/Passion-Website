@@ -1,14 +1,19 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import logo from "../assets/Images/passionLogo.svg";
 import menu from "../assets/Icons/menu.svg";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <nav className="mx-auto flex items-center justify-between p-4 sm:px-10 md:px-20 lg:px-40">
@@ -18,13 +23,12 @@ function Nav() {
         </NavLink>
       </div>
       <div className="flex">
-        <div className="hidden ml-10 md:flex pl-2 py-2 ">
+        <div className="hidden ml-10 md:flex pl-2 py-2">
           <ul className="flex justify-between lg:gap-5 space-x-4">
             <li>
               <NavLink
                 to="/"
-                className="text-lg active:font-bold active:text-Yellow lg:text-xl"
-                exact
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow lg:text-xl"
                 onClick={toggleMenu}
               >
                 Home
@@ -33,7 +37,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/about"
-                className="text-lg active:font-bold active:text-Yellow lg:text-xl"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow lg:text-xl"
                 onClick={toggleMenu}
               >
                 About
@@ -42,7 +46,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/services"
-                className=" text-lg active:font-bold active:text-Yellow lg:text-xl"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow lg:text-xl"
                 onClick={toggleMenu}
               >
                 Services
@@ -51,7 +55,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/resume"
-                className="text-lg active:font-bold active:text-Yellow lg:text-xl"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow lg:text-xl"
                 onClick={toggleMenu}
               >
                 Resume
@@ -72,7 +76,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/"
-                className="text-lg active:font-bold active:text-Yellow block w-full"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow block w-full"
                 onClick={toggleMenu}
               >
                 Home
@@ -81,7 +85,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/about"
-                className="text-lg active:font-bold active:text-Yellow block w-full"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow block w-full"
                 onClick={toggleMenu}
               >
                 About
@@ -90,7 +94,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/services"
-                className="text-lg active:font-bold active:text-Yellow block w-full"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow block w-full"
                 onClick={toggleMenu}
               >
                 Services
@@ -99,7 +103,7 @@ function Nav() {
             <li>
               <NavLink
                 to="/resume"
-                className="text-lg active:font-bold active:text-Yellow block w-full"
+                className="text-lg active:font-bold active:text-Yellow focus:text-Yellow block w-full"
                 onClick={toggleMenu}
               >
                 Resume
