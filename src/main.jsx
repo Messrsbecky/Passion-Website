@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"; 
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -8,13 +8,12 @@ import RootLayout from "./Layouts/RootLayout";
 //pages
 import HomePage from "./Pages/Home/HomePage";
 import About from "./Pages/About/About";
-import Services from "./Pages/Service/ServicePage";
+import ServicePage from "./Pages/Service/ServicePage";
 import Resume from "./Pages/Resume/Resume";
 import NotFound from "./Pages/Error/NotFound";
 
 //styles
 import "./styles/index.css";
-import ServicePage from "./Pages/Service/ServicePage";
 
 
 

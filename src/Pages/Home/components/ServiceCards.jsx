@@ -85,7 +85,7 @@ function ServicesCards() {
       onMouseEnter={handleMouseEnter}
     >
       <h2>Services</h2>
-      <div className="service-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 h-[1650px] sm:h-[1550px] md:h-[1100px] lg:h-[800px]">
+      <div className="service-container grid grid-cols-1  sm:auto-cols-min md:grid-cols-2 lg:grid-cols-2 gap-8">
         {showCards.map((serviceCard, index) => (
           <section
             className={`flex flex-col flex-1 gap-5 glass-container  bg-Yellow bg-opacity-10 backdrop-blur-lg shadow-lg rounded-2xl py-6 px-4 md:gap-5 sm:px-10 animated-card delay-${
@@ -108,9 +108,11 @@ function ServicesCards() {
                 {serviceCard.description}
               </p>
             </div>
-            <div className="flex items-center mt-auto">
-              <Link to="/services" target="_top" rel="noopener noreferrer">
-                <button className="TxtBtn px-0">Know more</button>
+            <div className="flex items-center mt-auto hover:text-White active:text-White">
+              <Link to="/services" target="_top" className="">
+                <button className="TxtBtn px-0 hover:text-White active:text-White ">
+                  Know more
+                </button>
               </Link>
             </div>
           </section>

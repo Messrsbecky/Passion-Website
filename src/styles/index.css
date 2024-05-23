@@ -6,18 +6,15 @@
 
 @layer components {
   .btn {
-    @apply bg-Yellow text-DarkPurple border border-Yellow py-2 px-8 rounded-xl font-semibold text-lg dark:bg-Yellow dark:text-DarkPurple;
+    @apply bg-Yellow text-DarkPurple border border-Yellow py-2 px-6 sm:px-8 rounded-xl font-semibold text-lg;
   }
   .TxtBtn {
     @apply bg-transparent text-Yellow border-none 
-  py-2 px-8 font-semibold text-lg dark:text-Yellow;
+  py-2 px-8 font-semibold text-lg;
   }
 }
 
 :root {
-  /* Font sizes */
-  --urbanist-font-size-heading: 3.5rem;
-  --urbanist-font-size-paragraph: 1rem;
 
   /* Font color */
   --urbanist-font-color: #fafafa;
@@ -26,9 +23,6 @@
   /* Font style */
   --urbanist-font-style-normal: normal;
   --urbanist-font-style-italic: italic;
-
-  /* Text transform */
-  --urbanist-text-transform-uppercase: uppercase;
 }
 
 body {
@@ -36,12 +30,12 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a0217;
+  background-color: #0A0217;
 }
 * {
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
-  font-size: var(--urbanist-font-size-paragraph);
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--urbanist-font-color);
   letter-spacing: normal;
@@ -92,23 +86,11 @@ a:hover {
   color: var(--urbanist-secondary-color);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-/*services card glass-morphoric effect */
+/*services card glass-morphoric effect*/
 .glass-container {
   border-radius: 10px;
   box-shadow: -1px 0 1px 0.5px rgba(227, 198, 72, 0.5),
-    1px -1px 1px rgba(42, 33, 39, 1); /*Adjust shadow intensity here*/
+    1px -1px 1px rgba(42, 33, 39, 1);
 }
 
 @keyframes fadeIn {
