@@ -26,7 +26,7 @@ function MainHero() {
           />
         )}
       </div>
-      <div className="text-center flex flex-col gap-6 px-4 md:text-left md:w-5/8 md:gap-8 lg:w-3/5 lg:py-0 lg:my-10 lg:gap-10">
+      <div className="text-center flex flex-col gap-6 md:text-left md:w-5/8 md:gap-8 lg:w-3/5 lg:py-0 lg:my-10 lg:gap-10">
         <h3 className="text-White dark:text-White">Hello</h3>
         <h1 className="text-Yellow dark:text-Yellow">I&#39;m Duyilemi Ojo-uyi</h1>
         <h3 className="text-DullGold dark:text-DullGold">Shiller and Community Manager</h3>

@@ -69,7 +69,7 @@ function Services() {
       <div className="flex flex-wrap gap-6">
         {services.map((service) => (
           <section
-            className="flex flex-col gap-5 glass-container bg-Yellow bg-opacity-10 backdrop-blur-lg shadow-lg rounded-2xl md:items-center md:text-center p-5 mx-5 md:py-10"
+            className="flex flex-col gap-5 glass-container bg-Yellow bg-opacity-10 backdrop-blur-lg shadow-lg rounded-2xl sm:px-10 md:items-center md:text-center p-5 mx-5 md:py-10"
             key={service.id}
           >
             <div>
@@ -98,13 +98,27 @@ function Services() {
                 {service.fullDescription}
               </p>
             </div>
-            <div className="flex items-center">
-              <button
-                className="TxtBtn px-2 md:hidden"
-                onClick={() => toggleDescription(service.id)}
-              >
-                {service.showFullDescription ? "Show less" : "Know more"}
-              </button>
+            <div className="flex items-center justify-between">
+              <div className="flex justify-between sm:w-2/3 w-full md:hidden">
+                <button
+                  className="TxtBtn hover:text-White active:text-White 
+                   px-0 md:hidden"
+                  onClick={() => toggleDescription(service.id)}
+                >
+                  {service.showFullDescription ? "Show less" : "Know more"}
+                </button>
+
+                <button className=" px-0 md:hidden">
+                  <a
+                    href="mailto:ojouyiduyilemi@gmail.com"
+                    target="_self"
+                    rel="noopener noreferrer"className="btn  hover:text-White 
+                    active:bg-White focus:bg-DullGold active:border-DullGold border focus:border-DullGold"
+                  >
+                    Hire me
+                  </a>
+                </button>
+              </div>
               <button className="btn p-0 hidden md:flex">
                 <a
                   href="mailto:ojouyiduyilemi@gmail.com"
