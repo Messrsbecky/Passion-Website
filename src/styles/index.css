@@ -15,7 +15,6 @@
 }
 
 :root {
-
   /* Font color */
   --urbanist-font-color: #fafafa;
   --urbanist-secondary-color: #e3c648;
@@ -30,7 +29,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0A0217;
+  background-color: #0a0217;
 }
 * {
   box-sizing: border-box;
@@ -47,8 +46,8 @@ h3 {
   font-weight: 600;
 }
 h1 {
-  line-height: 4.2rem;
-  font-size: 3rem;
+  line-height: 3rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2rem;
@@ -58,19 +57,21 @@ h3 {
   font-size: 1.5rem;
   line-height: 1.8rem;
 }
-h4 {
-  font-size: 1.4rem;
+h4{
+  font-size: 1.357rem;
+  line-height: 1.65rem;
   font-weight: 600;
-  line-height: 1.8rem;
 }
-p,
-li {
+p {
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }
-li a {
+
+li {
   font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 a {
@@ -125,28 +126,45 @@ a:hover {
   animation-delay: 2s;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   h1,
   h2,
   h3 {
     font-weight: 600;
   }
   h1 {
-    line-height: 4.2rem;
     font-size: 4rem;
+    line-height: 4.8rem;
+    
   }
   h2 {
     font-size: 3rem;
     line-height: 3.6rem;
   }
   h3 {
-    font-size: 2rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
   }
-  p,
-  li {
-    font-size: 1.2rem;
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+  }
+  p {
+    font-size: 1.25rem;
     line-height: 2rem;
     font-weight: 400;
+  }
+  
+  li {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  
+  a {
+    font-weight: 600;
+    color: var(--urbanist-font-color);
+    text-decoration: inherit;
   }
 }
