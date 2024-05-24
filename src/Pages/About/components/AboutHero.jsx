@@ -14,7 +14,7 @@ function AboutHero() {
         <div className=" mx-auto md:hidden">
           <img src={smallArrow} alt="" width={68} className="w-full" />
         </div>
-        <div className="flex flex-col gap-2 md:text-start  md:mr-10 md:w-4/5 lg:w-4/6">
+        <div className="flex flex-col gap-2 md:text-start  md:mr-10 md:w-4/5 lg:w-5/6">
           <h1>Hi there!</h1>
           <p className="">
             Fueled by a passion for anything crypto, i will like to formally

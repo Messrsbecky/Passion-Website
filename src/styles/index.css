@@ -27,8 +27,6 @@
 body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: #0a0217;
 }
 * {
@@ -94,6 +92,8 @@ a:hover {
     1px -1px 1px rgba(42, 33, 39, 1);
 }
 
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -126,6 +126,16 @@ a:hover {
   animation-delay: 2s;
 }
 
+/* styles.css */
+.no-dark-mode .dark\:border-r-DarkPurple {
+  border-right-color: #FAFAFA !important;
+}
+
+.no-dark-mode .dark\:border-t-White {
+  border-top-color: #0A0217 !important;
+}
+
+
 @media screen and (min-width: 600px) {
   h1,
   h2,
@@ -151,7 +161,7 @@ a:hover {
     line-height: 1.75rem;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 400;
   }
