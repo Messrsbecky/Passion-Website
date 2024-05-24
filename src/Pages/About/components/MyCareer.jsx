@@ -4,7 +4,7 @@ function MyCareer() {
       className="flex flex-col items-center gap-6 bg-Yellow bg-opacity-10 backdrop-blur-lg 
     shadow-lg glass-container rounded-2xl p-5 py-10 my-10 md:px-10"
     >
-      <h2>My career so far</h2>
+      <h2 className="text-center">My career so far</h2>
       <p>
         As a professional shiller I help promote services within crypto currency
         communities to raise awareness and interest in a specific token via
