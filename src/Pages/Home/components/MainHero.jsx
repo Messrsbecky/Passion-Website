@@ -15,7 +15,7 @@ function MainHero() {
   }, []);
 
   return (
-    <header className="bg-DarkPurple dark:bg-DarkPurple flex flex-col justify-center items-center gap-14 pt-10 px-5 md:flex-row-reverse md:gap-5 md:py-10 md:px-20 lg:py-20 lg:px-40">
+    <header className="bg-DarkPurple flex flex-col justify-center items-center gap-14 pt-10 px-5 md:flex-row-reverse md:gap-5 md:py-10 md:px-20 lg:py-20 lg:px-40">
       <div className="flex justify-center md:justify-end lg:w-2/5 lg:gap-0">
         {isVisible && (
           <img

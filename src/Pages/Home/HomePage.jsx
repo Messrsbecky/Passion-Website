@@ -4,7 +4,7 @@ import ServicesCards from "./components/ServiceCards";
 import Triangle from "./components/Triangle";
 function HomePage() {
   return (
-    <div className="bg-DarkPurple dark:bg-DarkPurple w-full">
+    <div className="bg-DarkPurple w-full">
       <MainHero />
       <Triangle />
       <AboutSect />
