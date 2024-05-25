@@ -32,6 +32,8 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
+  margin: 0;
+  padding: 0;
  
 }
 * {
@@ -90,7 +92,7 @@ a:hover {
   color: var(--urbanist-secondary-color);
 }
 
-/*services card glass-morphoric effect*/
+/*services card glassmorphoric effect*/
 .glass-container {
   border-radius: 10px;
   box-shadow: -1px 0 1px 0.5px rgba(227, 198, 72, 0.5),
@@ -132,12 +134,17 @@ a:hover {
 }
 
 /* styles.css */
-.no-dark-mode .dark\:border-r-DarkPurple {
-  border-right-color: #FAFAFA !important;
+.no-dark-mode{
+  background-color: #0A0217 !important;
+}
+.no-dark-mode .dark\:border-r-DarkPurple .triangle {
+  border-right-color:rgba(23, 23, 23, 1) !important;
+  opacity: 1 !important;
 }
 
-.no-dark-mode .dark\:border-t-White {
-  border-top-color: #0A0217 !important;
+.no-dark-mode .dark\:border-t-White .triangle {
+  border-top-color: rgba(250, 250, 250, 1) !important;
+  opacity: 1 !important;
 }
 
 
@@ -183,9 +190,11 @@ a:hover {
     text-decoration: inherit;
   }
 }
+/* If the user prefers dark mode, 
+we of course apply color-scheme: dark, as usual */
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: Dark;
+    color-scheme: light;
   }
 }
 
@@ -193,6 +202,6 @@ a:hover {
 we still enforce color-scheme: dark, despite the user preference */
 @media (prefers-color-scheme: light) {
   html {
-    color-scheme: Dark;
+    color-scheme: light;
   }
 }
