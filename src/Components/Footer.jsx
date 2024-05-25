@@ -13,10 +13,10 @@ function Footer() {
       <div className="">
         <h2 className="text-DarkPurple">Contact Me</h2>
       </div>
-      <div className="flex flex-col items-center w-full gap-10  sm:flex-row sm:justify-between sm:px-10 md:px-20 lg:px-40">
+      <div className="flex flex-col items-center w-full gap-10  sm:flex-row sm:justify-between sm:px-8 md:px-14 lg:px-40 ">
         <div className="flex gap-10">
           <ul className="flex flex-col gap-5 items-center md:items-start">
-            <h4 className="text-DarkPurple md:text-xl sm:text-lg lg:text-2xl">
+            <h4 className="text-DarkPurple sm:text-lg  lg:text-xl ">
               {" "}
               <img
                 src={tel}
@@ -41,7 +41,7 @@ function Footer() {
         </div>
         <div className="flex gap-10">
           <ul className="flex flex-col gap-5 items-center md:items-start">
-            <h4 className="text-DarkPurple sm:text-lg md:text-xl lg:text-2xl">
+            <h4 className="text-DarkPurple sm:text-lg lg:text-xl">
               <img
                 src={mail}
                 alt="Email address"
@@ -65,7 +65,7 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-5 items-center md:items-start">
           <div>
-            <h4 className="text-DarkPurple sm:text-lg md:text-xl lg:text-2xl">
+            <h4 className="text-DarkPurple sm:text-lg lg:text-xl">
               Reach us on Socials
             </h4>
           </div>

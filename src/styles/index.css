@@ -25,12 +25,17 @@
 }
 
 body {
+  box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   background-color: #0a0217;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+ 
 }
 * {
-  box-sizing: border-box;
+  
   font-family: "Urbanist", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -56,7 +61,7 @@ h3 {
   line-height: 1.8rem;
 }
 h4{
-  font-size: 1.357rem;
+  font-size: 1.25rem;
   line-height: 1.65rem;
   font-weight: 600;
 }
@@ -156,7 +161,7 @@ a:hover {
     line-height: 2.4rem;
   }
   h4 {
-    font-size: 1.3rem;
+    font-size: 1.375rem;
     font-weight: 600;
     line-height: 1.75rem;
   }
@@ -176,5 +181,18 @@ a:hover {
     font-weight: 600;
     color: var(--urbanist-font-color);
     text-decoration: inherit;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: Dark;
+  }
+}
+
+/* If the user prefers light mode, 
+we still enforce color-scheme: dark, despite the user preference */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: Dark;
   }
 }
