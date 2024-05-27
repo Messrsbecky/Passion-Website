@@ -3,7 +3,7 @@ module.exports = {
   corePlugins: {
   },
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false,
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
